@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Project Path="Nexus.API/Nexus.API.csproj" />
+  <Project Path="Nexus.Application/Nexus.Application.csproj" />
+  <Project Path="Nexus.Domain/Nexus.Domain.csproj" />
+  <Project Path="Nexus.Infrastructure/Nexus.Infrastructure.csproj" />
+</Solution>
