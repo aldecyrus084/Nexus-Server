@@ -33,7 +33,7 @@ namespace Nexus.Application.Features.AddTime
             _rateRepo = rateRepo; 
         }
 
-        public async Task<GenericResponseDTO<string>> Handle(TimeCommand request, CancellationToken cancellationToken)
+        public async Task<GenericResponseDTO<TimeResponseDTO>> Handle(TimeCommand request, CancellationToken cancellationToken)
         {
             await _unitOfWork.BeginTransactionAsync();
             try
@@ -43,7 +43,7 @@ namespace Nexus.Application.Features.AddTime
                 var clientpc = await _clienPcRepo.getClientPCByIdAsync(request.PCId);
                 if(clientpc == null)
                 {
-                    return new GenericResponseDTO<string>
+                    return new GenericResponseDTO<TimeResponseDTO>
                     {
                         isSuccess = false,
                         message = "Client pc not found"
@@ -67,7 +67,11 @@ namespace Nexus.Application.Features.AddTime
                     {
                         isSuccess = false,
                         message = "Customer time not found",
-                        Data 
+                        Data = new TimeResponseDTO
+                        {
+                            Time = result.time,
+                            Points = result.point
+                        }
 
                     };
                 }
@@ -79,9 +83,7 @@ namespace Nexus.Application.Features.AddTime
 
                 await _unitOfWork.SaveChangesAsync();
                 await _unitOfWork.CommitTransactionAsync();
-
-                decimal overallPoints;
-
+                
 
                 return new GenericResponseDTO<TimeResponseDTO>
                 {
@@ -95,17 +97,12 @@ namespace Nexus.Application.Features.AddTime
             catch (Exception ex)
             {
                 await _unitOfWork.RollbackTransactionAsync();
-                return new GenericResponseDTO<int>
+                return new GenericResponseDTO<TimeResponseDTO>
                 {
                     isSuccess = false,
                     message = ex.Message
                 };
             }
-        }
-
-        private decimal PointCalculator(int time)
-        {
-            return time;
         }
 
         private async Task<(int time, decimal point)> TimePointCalculator(int amount, bool isVip)
