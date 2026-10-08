@@ -31,7 +31,7 @@ namespace Nexus.Domain.Entities
 
         private DateTime calculateAllocatedTime(int allocatedTime)
         {
-            
+            return DateTime.UtcNow;
         }
     }
 }

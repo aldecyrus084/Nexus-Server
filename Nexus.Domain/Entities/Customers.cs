@@ -22,13 +22,14 @@ namespace Nexus.Domain.Entities
         public ICollection<PointTransactions> PointTransactions { get; private set; } = new List<PointTransactions>();
         public ICollection<TimeTransactions> TimeTransactions { get; private set; } = new List<TimeTransactions>();
 
-        public Customers(string name, string username, string hashedPassword, decimal points)
+        public Customers(string name, string username, string hashedPassword, string? ipAddress)
         {
             CustomerId = Guid.NewGuid();
             Name = name;
             Username = username;
             HashPassword = hashedPassword;
             isActive = true;
+            IpAddress = ipAddress;
             CreatedAt = DateTime.UtcNow;
         }
 
