@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace Nexus.Application.Interface.Repository
 {
-    public interface ICustomerTimeRepository
+    public interface IClientPCRepository
     {
-        Task CreateCustomerTimeAsync(CustomerTime customerTime);
-        Task<CustomerTime?> GetCustomerTimeByCustomerIdAsync(Guid customerId);
+        Task RegisterClientPCAsync(ClientPC client);
+
+        Task<ClientPC?> getClientPCByIdAsync(Guid Id);
     }
 }

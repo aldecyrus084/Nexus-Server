@@ -19,6 +19,15 @@ namespace Nexus.Domain.Entities
 
         protected TimeTransactions() { }
 
+        public TimeTransactions(Guid customerId, int seconds, string type, string? remarks)
+        {
+            TimeTransactionsId = Guid.NewGuid();
+            CustomerId = customerId;
+            Seconds = seconds;
+            Type = type;
+            CreateAt = DateTime.UtcNow;
+            Remarks = remarks;
+        }
         
     }
 }

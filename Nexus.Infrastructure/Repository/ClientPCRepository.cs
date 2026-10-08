@@ -10,23 +10,23 @@ using System.Threading.Tasks;
 
 namespace Nexus.Infrastructure.Repository
 {
-    public class CustomerTimeRepository : ICustomerTimeRepository
+    public class ClientPCRepository : IClientPCRepository
     {
         private readonly ApplicationDBContext _context;
 
-        public CustomerTimeRepository(ApplicationDBContext context)
+        public ClientPCRepository(ApplicationDBContext context)
         {
             _context = context;
         }
-
-        public async Task CreateCustomerTimeAsync(CustomerTime customerTime)
+        public async Task<ClientPC?> getClientPCByIdAsync(Guid Id)
         {
-            await _context.CustomerTime.AddAsync(customerTime);
+            return await _context.ClientPC.FirstOrDefaultAsync(x => x.ClientPCId == Id);
         }
 
-        public async Task<CustomerTime?> GetCustomerTimeByCustomerIdAsync(Guid customerId)
+        public async Task RegisterClientPCAsync(ClientPC client)
         {
-            return await _context.CustomerTime.FirstOrDefaultAsync(x => x.CustomerId == customerId);
+            await _context.ClientPC.AddAsync(client);
+
         }
     }
 }

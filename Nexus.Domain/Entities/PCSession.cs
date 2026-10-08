@@ -24,14 +24,9 @@ namespace Nexus.Domain.Entities
             CustomerId = customerId;
             PCId = pcId;
             StartedAt = DateTime.Now;
-            ExpiresAt = calculateAllocatedTime(allocatedTime);
+            ExpiresAt = StartedAt.AddSeconds(allocatedTime);
             Status = "Active";
 
-        }
-
-        private DateTime calculateAllocatedTime(int allocatedTime)
-        {
-            return DateTime.UtcNow;
         }
     }
 }

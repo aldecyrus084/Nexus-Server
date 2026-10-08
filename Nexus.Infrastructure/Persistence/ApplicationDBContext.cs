@@ -18,6 +18,8 @@ namespace Nexus.Infrastructure.Persistence
         public DbSet<PointTransactions> PointTransactions { get; set; }
         public DbSet<TimeTransactions> TimeTransactions { get; set; }
         public DbSet<PCSession> PCSession { get; set; }
+        public DbSet<Rates> Rates { get; set; }
+        public DbSet<ClientPC> ClientPC { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

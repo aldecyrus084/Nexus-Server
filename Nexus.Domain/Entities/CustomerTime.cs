@@ -12,5 +12,18 @@ namespace Nexus.Domain.Entities
         public Guid CustomerId { get; private set; }
         public Customers Customer { get; private set; }
         public int AvailableSeconds { get; private set; }
+
+        protected CustomerTime() { }
+
+        public CustomerTime(Guid customerId, int availableTime)
+        {
+            CustomerId = customerId;
+            AvailableSeconds = availableTime;
+        }
+
+        public void UpdateCustomerTime(int time)
+        {
+            AvailableSeconds += time;
+        }
     }
 }

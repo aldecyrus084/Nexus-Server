@@ -11,7 +11,7 @@ namespace Nexus.Domain.Entities
         public Guid PointTransactionId { get; private set; }
         public Guid CustomerId { get; private set; }
         public Customers Customers { get; private set; }
-        public int Points { get; private set; }
+        public decimal Points { get; private set; }
         public string Type { get; private set; } // Earn, Redeem, Adjustment
         public string? Reference { get; private set; }
         public string? Remarks { get; private set; }
@@ -20,7 +20,7 @@ namespace Nexus.Domain.Entities
 
         protected PointTransactions() { }
         
-        public PointTransactions(Guid customerId, int point, string type, string? reference, string? remarks)
+        public PointTransactions(Guid customerId, decimal point, string type, string? reference, string? remarks)
         {
             CustomerId = customerId;
             Points = point;
@@ -30,7 +30,7 @@ namespace Nexus.Domain.Entities
             CreatedAt = DateTime.UtcNow;
         }
 
-        public void Adjustment(int point)
+        public void Adjustment(decimal point)
         {
             Points = point;
             Type = "Adjustment";

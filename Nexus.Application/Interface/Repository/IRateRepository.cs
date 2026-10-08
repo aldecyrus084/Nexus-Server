@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Nexus.Application.Interface.Repository
 {
-    public interface ICustomerTimeRepository
+    public interface IRateRepository
     {
-        Task CreateCustomerTimeAsync(CustomerTime customerTime);
-        Task<CustomerTime?> GetCustomerTimeByCustomerIdAsync(Guid customerId);
+        Task CreateRateAsync(Rates rate);
+        Task<IEnumerable<Rates>> GetRatesByStatusAsync(bool isVip);
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.API\\Nexus.API.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.API\\Nexus.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.API\\Nexus.API.csproj": {
+    "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.API\\Nexus.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.API\\Nexus.API.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.API\\Nexus.API.csproj",
         "projectName": "Nexus.API",
-        "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.API\\Nexus.API.csproj",
-        "packagesPath": "C:\\Users\\aldec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.API\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.API\\Nexus.API.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aldec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -34,11 +34,11 @@
             "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Application\\Nexus.Application.csproj": {
-                "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Application\\Nexus.Application.csproj"
+              "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Application\\Nexus.Application.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Application\\Nexus.Application.csproj"
               },
-              "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj"
+              "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj"
               }
             }
           }
@@ -53,7 +53,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -76,6 +76,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -84,24 +102,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Application\\Nexus.Application.csproj": {
+    "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Application\\Nexus.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Application\\Nexus.Application.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Application\\Nexus.Application.csproj",
         "projectName": "Nexus.Application",
-        "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Application\\Nexus.Application.csproj",
-        "packagesPath": "C:\\Users\\aldec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Application\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Application\\Nexus.Application.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aldec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -118,8 +136,8 @@
             "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Domain\\Nexus.Domain.csproj": {
-                "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Domain\\Nexus.Domain.csproj"
+              "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Domain\\Nexus.Domain.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Domain\\Nexus.Domain.csproj"
               }
             }
           }
@@ -134,7 +152,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -147,7 +165,11 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[14.2.0, )"
+              "version": "[12.5.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.20, )"
             }
           },
           "imports": [
@@ -161,29 +183,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Domain\\Nexus.Domain.csproj": {
+    "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Domain\\Nexus.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Domain\\Nexus.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Domain\\Nexus.Domain.csproj",
         "projectName": "Nexus.Domain",
-        "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Domain\\Nexus.Domain.csproj",
-        "packagesPath": "C:\\Users\\aldec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Domain\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Domain\\Nexus.Domain.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aldec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -212,12 +248,18 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
           "framework": "net9.0",
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -229,29 +271,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj": {
+    "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj",
         "projectName": "Nexus.Infrastructure",
-        "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\aldec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Infrastructure\\Nexus.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aldec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -268,11 +324,11 @@
             "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Application\\Nexus.Application.csproj": {
-                "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Application\\Nexus.Application.csproj"
+              "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Application\\Nexus.Application.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Application\\Nexus.Application.csproj"
               },
-              "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Domain\\Nexus.Domain.csproj": {
-                "projectPath": "C:\\Users\\aldec\\source\\repos\\Nexus-Server\\Nexus.Domain\\Nexus.Domain.csproj"
+              "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Domain\\Nexus.Domain.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\NexusServer\\Nexus.Domain\\Nexus.Domain.csproj"
               }
             }
           }
@@ -287,17 +343,13 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
           "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
-            "BCrypt.Net-Next": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.20, )"
@@ -317,6 +369,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.20, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.20, )"
             }
           },
           "imports": [
@@ -330,12 +390,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.18, 9.0.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
